@@ -1,0 +1,44 @@
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.backButtonWrapper {
+	position: absolute;
+	top: 3vh;
+	left: 5vw;
+}
+
+.itemsList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.loadoutItemContainer {
+	padding: 0.5rem 1rem;
+	background-color: #2a3435;
+	border-radius: 10px;
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+	font-size: 0.9rem;
+
+	display: grid;
+	text-align: center;
+	grid-template-columns: 5fr 1fr 2fr;
+	gap: 1rem;
+	width: 75%;
+}
+
+.itemName {
+	text-align: left;
+}
+
+.itemWeight {
+	text-align: right;
+}

@@ -1,0 +1,90 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 15vh;
+	z-index: 1000;
+}
+
+.modal {
+	position: relative;
+	background-color: #2a3435;
+	border-radius: 0.25rem;
+	width: 80%;
+	text-align: center;
+	padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.closeButtonWrapper {
+	position: absolute;
+	top: 0.5rem;
+	left: 1rem;
+	font-size: 1.5rem;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0.5rem;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+button {
+	background: #cc00006b;
+	color: #e2e2e2;
+	padding: 0.6rem 1.4rem;
+	border: none;
+	border-radius: 0.45rem;
+	font-family: "Roboto";
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	transition: all 0.2s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	-webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+}
+
+/* Hover effect */
+button:hover {
+	filter: brightness(125%);
+	transform: translateY(-1px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Active click effect (on mobile) */
+button:active {
+	transform: scale(0.95); /* Slightly shrink the button when pressed */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Keep the shadow visible */
+}
+
+/* Focus effect for keyboard navigation (accessibility) */
+button:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(0, 255, 131, 0.6);
+}
+
+.submitButton {
+	background-color: #3a5134;
+}
+
+/* For screens larger than 768px (i.e., desktop */
+@media (min-width: 768px) {
+	.modal {
+		width: 20%; /* Adjust the width for desktop or larger screens */
+	}
+}
